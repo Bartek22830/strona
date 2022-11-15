@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <title>Formularz</title>
+</head>
+
+<body>
+<nav>
+
+    <h4><a href="..\stronaglowna.html">Wyjdź z zakupów</a></h4>
+</nav>
+<div class="stronaZamowienia">
+
+    <form class="form" name="form" method="post" action="mail.php3">
+    <fieldset>
+    <legend>
+     <h2>FORMULARZ ZAMÓWIENIA</h2>
+    </legend>
+        <h3 class="panel-title">Podaj dane do wysyłki</h3>
+            Imię<br><input type="text" placeholder="wstaw swoje imie" maxlength="40" required=""><br>
+            Nazwisko<br><input type="text"  maxlength="40" required=""><br>
+            Miasto<br><input type="text"  maxlength="40"><br>
+            Kod Pocztowy<br><input type="text"   maxlength="6" required=""><br>
+            Ulica <br><input type="text"   maxlength="80" required=""><br>
+            Nrdomu <br> <input type="text"   maxlength="80"  required=""><br>
+            Nr mieszkania <br> <input type="text"   maxlength="80"><br>
+            Mail<br><input type="text"  maxlength="40" required=""><br>
+            Telefon <br><input type="text"  name="telefon" maxlength="25"  required=""><br><br>
+            <label for="faktura">Wystawić fakturę?</label>
+                <input type="checkbox"><br>
+
+        <h3 class="panel-title">Wybierz sposób dostawy</h3>
+        <input type="radio" name="dostawa" ><label >Kurier</label><br>
+            <input type="radio" name="dostawa" ><label>Paczkomat</label><br>
+            <input type="radio" name="dostawa" ><label>Punkt odbioru</label><br>
+        <h3 class="panel-title">Wybierz metodę płatności</h3>
+        <input type="radio" name="sposob_platnosci">
+        <img src="file:///C:/Users/studentwftims.LAB/Desktop/htmlbbbbb/blik.png" height="100" width="200">
+        <figcaption>Blik</figcaption>
+        <input type="radio" name="sposob_platnosci">                        
+        <img src="file:///C:/Users/studentwftims.LAB/Desktop/htmlbbbbb/karta.png"height="100" width="200">
+        <figcaption>Płatność kartą</figcaption>
+        <h3 class="panel-title">Uwagi do zamówienia</h3>
+                <textarea name="tresc" placeholder="Uwagi do zamówienia" ></textarea><br>
+                <input type="submit" name="submit" value="wyślij">
+    </fieldset></form></div>
+
+
+</body>
+
+</html>
